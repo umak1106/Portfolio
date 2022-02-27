@@ -1,0 +1,34 @@
+.bar {
+	background: rgba(128,128,128,0.3);
+	width: 0;
+	margin: .25em 0;
+	color: #fff;
+	position: relative;
+	
+	clear: both;
+	&:nth-of-type(2n) {
+    background: rgba(128,128,128,0.5);
+		.label {
+			background-color: #fff;
+		}
+	}
+	.label {
+		text-align: right;
+		display: inline-block;
+		position: relative;
+		background: #fff;
+		min-width: 60px;
+		max-width: 80px;
+		padding: 1rem;
+		font-size: 0.8rem;
+    color: rgb(158, 158, 158);
+		z-index: 2;
+	}	
+}
+.count {
+	position: absolute;
+	right: .25em;
+	top: .75em;
+	padding: 0.05em 0.5em;
+	font-size: 1em;
+}
